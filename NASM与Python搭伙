@@ -1,0 +1,22 @@
+推荐 ctypes 或 cffi（轻量），如果长期维护且交互频繁，可上 pybind11
+我在在 C++ 用 extern "C" 导出，NASM 用 global 并遵守目标平台 ABI：
+
+Linux/macOS：System V AMD64
+Windows：Microsoft x64 calling convention
+
+如果你希望跨平台，统一先按 System V 写，Windows 上多写一层适配或只考虑 MinGW
+
+先别急着写复杂逻辑，你找出 Python 里真正的性能瓶颈（例如：寻路 A*、像素级图像处理、声音混音、地图解析）
+约定好函数签名，用最简例子（如：一个数组加法）把 Python → C++/NASM 的通道跑通
+
+
+
+RA2 图像数据（如 SHP 帧的原始像素数组）很大，直接从 Python 传内存指针：
+python：
+buf = (ctypes.c_ubyte * size).from_address(data_ptr)
+我的 C++ 直接操作这块内存，避免反复复制
+
+如果热点函数是纯计算（无 Python 对象操作），一定要在 C++ 里释放 GIL，否则 Python 多线程会被卡死
+Py_BEGIN_ALLOW_THREADS
+// 你的密集计算，可调用我的 NASM 函数
+Py_END_ALLOW_THREADS
