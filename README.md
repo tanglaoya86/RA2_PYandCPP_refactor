@@ -1,6 +1,77 @@
 # RA2_PYandCPP_refactor
-## 所以你写HTML干什么   不是我写的，是游戏文件
+## 所以你写HTML干什么   先别搞README了
 这是错误的因为HTML依赖于浏览器环境 除此之外RA2资源文件受到EA版权的保护
 我查了下资源确实受版权保护，so我们名字不能叫这个了，资源也得全部重新弄
 不然我们就要把它弄成mod
-我又看了一下，剧情和战役也得重写，不过这样的话我们可以直接把它做成我们本来就要做的纳粹了
+
+
+换一下目录换成我这个我已经在写ASM优化了
+.
+├── assets
+│   ├── audio
+│   │   ├── ambient
+│   │   ├── speech
+│   │   └── ui
+│   ├── fonts
+│   ├── images
+│   │   ├── effects
+│   │   ├── terrain
+│   │   ├── ui
+│   │   └── units
+│   └── music
+├── CMakeLists.txt
+├── docs
+│   └── README.md
+├── LICENSE
+├── logs_and_chat
+│   ├── chat   #聊天
+│   ├── debug
+│   └── runtime
+├── README.md
+├── src
+│   ├── native
+│   │   ├── asm
+│   │   │   ├── a_star_core.asm
+│   │   │   ├── common.asm
+│   │   │   └── pixel_copy.asm
+│   │   └── cpp
+│   │       ├── astar
+│   │       │   ├── astar_types.h
+│   │       │   ├── astar.cpp
+│   │       │   └── astar.h
+│   │       ├── bindings
+│   │       │   ├── ctypes_exports.cpp
+│   │       │   └── pybind11_bindings.cpp
+│   │       └── render
+│   │           ├── color_convert.cpp
+│   │           ├── pixel_blitter.cpp
+│   │           └── pixel_blitter.h
+│   └── python
+│       ├── __init__.py
+│       ├── engine
+│       │   ├── __init__.py
+│       │   ├── audio.py
+│       │   ├── input.py
+│       │   └── render.py
+│       ├── formats
+│       │   ├── __init__.py
+│       │   ├── mix_parser.py
+│       │   ├── pal_parser.py
+│       │   └── shp_parser.py
+│       └── game
+│           ├── __init__.py
+│           ├── ai.py
+│           ├── buildings.py
+│           ├── rules.py
+│           └── units.py
+├── tests
+│   ├── astar
+│   │   └── test_astar.py
+│   └── native_iface
+│       └── test_native.py
+└── tools
+    ├── build_native.py
+    └── extract_assets.py
+
+33 directories, 33 files
+
