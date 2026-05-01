@@ -17,6 +17,7 @@
 # 行 我先写NASM 标准:Microsoft x64 ABI 我设想的调用链为:NASM(obj) -> C\C++(extern) -> Python
 
 ## 我这个py发癫，按键盘上的键没用，得好好研究一下
+```python
 import os
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'   # 必须放在 import pygame 之前
 
@@ -59,3 +60,12 @@ while running:
     pg.display.flip()               # 刷新画面
     clock.tick(60)                  # 限制 60 帧
 pg.quit()
+```
+# 那还不如C++的getch那一堆
+伪代码
+```asm
+extern getch
+main:
+    xor rcx,rcx
+```
+    call getch
