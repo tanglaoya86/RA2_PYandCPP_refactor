@@ -10,7 +10,8 @@
 
 ## 我马上用不了电脑了
 看asm
-##自己看
+## 自己看
+```asm
 ; NASM x64 Windows A* Pathfinding
 ; Input: map.txt (1st line: width height, then grid with S start, E end, # obstacle)
 ; Output: movement sequence (U D L R) to console
@@ -453,7 +454,9 @@ section .data
     noPathLen equ $ - noPathMsg
     startIdx dd 0
     endIdx dd 0
+```
 # 赶紧换一下目录换成我这个我已经在写ASM优化了
+```bash
 .
 ├── assets
 │   ├── audio
@@ -522,4 +525,4 @@ section .data
     └── extract_assets.py
 
 33 directories, 33 files
-
+```
