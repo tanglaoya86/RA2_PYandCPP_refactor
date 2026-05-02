@@ -1,4 +1,7 @@
-
+;[time 2026-5-02-10:28 to 11:07]
+;Auther:@Auror
+;Purpose:defense_file_system
+;Name:defense_asm
 
 global xtea_decrypt_block
 global crc32_asm
