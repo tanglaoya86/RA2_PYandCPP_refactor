@@ -62,6 +62,7 @@ while running:
     clock.tick(60)                  # 限制 60 帧
 pg.quit()
 ```
+```
 # 那还不如C++的getch那一堆
 伪代码
 ```asm
@@ -81,3 +82,5 @@ https://www.bilibili.com/video/BV1RZ4y1e7n1/?spm_id_from=333.337.search-card.all
 https://www.bilibili.com/cheese/play/ss20832?query_from=0&search_id=9534612882170631179&search_query=py%E5%92%8Cc%2B%2B%E5%90%88%E4%BD%9C&csource=common_hpsearch_null_null&spm_id_from=333.337.search-card.all.click
 
 ## 我要写ui把音频图片之类的py用上就得先写个主程序main.py(虽然最后要改名)才行。我先写个加载动画，然后你把检查dll的py扩展写好，我在加上检查dll的过程？
+
+我还看了一下，简直我草了。一个优质的坦克模型就要一个熟练模型师干7个小时，贴图2D像素都要2个小时，我们这个学校不可能有很会搞模型和游戏贴图的，卒了，还是只有我会一点模型（只会一点，简易广州塔模型已经是我的极限了），模型我也干了吧，贴图我们拿鼠标搞不可能搞好，只有让footer弄个触控笔在手机上画了，不然最好找个有触屏笔记本画画的。
