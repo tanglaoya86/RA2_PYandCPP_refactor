@@ -73,7 +73,7 @@ main:
 听说你们Py有个ra2mix专注处理《红警2》资源文件（*.mix）
 
 是，你直接用这个？（我创建目录的时候看见你留了有关mix的文件）
-有人玩py和ra2的，还专门做了一个py库叫ra2mix，我还用的这个解包的红警，但是我不知道它有用有访问dll的功能
+有人玩py和ra2的，还专门做了一个py库叫ra2mix。我还用的这个解包的红警，但是我不知道它有用有访问mix的功能
 
 今天一天都在外面，但是看了一下py和c++的合作原理。明天可能也没多少时间      你瞅瞅是不是这个方案
 https://www.bilibili.com/video/BV17y4y1W7BY/?spm_id_from=333.337.search-card.all.click
