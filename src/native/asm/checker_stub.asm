@@ -1,3 +1,4 @@
+bits 64              ;log:伪指令以消除16进制下错误 <Auror>
 default rel
 global checker_entry
 
