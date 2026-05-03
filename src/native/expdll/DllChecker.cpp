@@ -7,7 +7,6 @@
 //   JSON看最后
 //   txt文件格式
 //其实我打算把txt后续改为一个MD5的加盐哈希然后用 .bin 存储最后再核对但是...看你
-//...
 #define WIN32_LEAN_AND_MEAN
 #define _WIN32_WINNT _WIN32_WINNT_WIN7
 #include <windows.h>
