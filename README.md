@@ -1,3 +1,10 @@
+#有用的是DLL就是src/native/expdll/ 下面的两个
+
+
+
+
+
+
 # 汇编重写这段Py代码的任何部分都极其不划算而且...你就只写了个窗口啊   难道我不就是先让你看看吗，也没让你重写啊。至于这个按钮的逻辑我好好研究一下，把其他几个页面最出来
 # 按钮逻辑你知道WindowsAPI的那个WM和VK还有LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)吗
 # (shout) 你倒是把Py代码直接放出来啊 我只帮你用汇编重写热点函数 dll已经打包好了 dll和exe文件都传上来了自己找 src/native/expdll/    ?这个exe有啥用，要和dll配套?还有我今天作业剩的多，要晚上才能继续写了，素材我催footer弄一下 这个exe就是扫描dll的 dll单独使用自己看我的源代码  这个汇编我看不懂，给了ai给我分析一下吧，它和我说checker_stub.asm对检查游戏文件完整性和游戏依赖没用，dll_scan.asm有点用但不检查本地文件，还有你要把这些玩意写成py的函数打包成dll再给我，不然我用不了，那个下面的几个b站教程有讲怎么做成函数和打包（但我看不懂也没仔细研究，毕竟这不是我的工作）
