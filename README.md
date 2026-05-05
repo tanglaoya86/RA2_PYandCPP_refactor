@@ -1,4 +1,5 @@
-### 有用的是DLL就是src/native/expdll/ 下面的两个Dllchecker
+# Bro是一点代码都不写啊 C++占了90%+汇编占了5%+了
+### 有用的是DLL就是src/native/expdll/ 下面的两个Dllchecker 
 # 32 位 / 64 位不匹配
 
 我的代码里写死了只检查 64 位 PE：
